@@ -202,7 +202,7 @@ def AdminPanel():
     if request.method == "POST":
         identity = request.form.get("Admin")
         password = request.form.get("psw")
-        if identity=="Adminstrator" and password=="12xa":
+        if identity=="Adminstrator@admi.com" and password=="12xa":
             return redirect(url_for('info'))
         else:
             flash("No Do not Attempt")
