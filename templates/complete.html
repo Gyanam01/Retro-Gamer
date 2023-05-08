@@ -1,0 +1,33 @@
+<!DOCTYPE html>   
+<html>   
+<head>  
+<meta name="viewport" content="width=device-width, initial-scale=1">  
+<title> Login Page </title>  
+<style>   
+Body {  
+  font-family: Calibri, Helvetica, sans-serif;  
+  background-color: blue;  
+}
+a:link, a:visited {
+  background-color: #f44336;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+a:hover, a:active {
+  background-color: red;
+}
+</style>   
+</head>    
+<body>    
+	{% extends "parent.html" %}
+    {% block content %}
+    <center> <h1> You Have Already Completed the Hunt!</h1> </center>   
+	
+	<center><h2> Want to Try Again?? </h2>
+	<a href="{{ url_for('register') }}"> Re-Register </a>
+	{% endblock %}
+</body>     
+</html>
